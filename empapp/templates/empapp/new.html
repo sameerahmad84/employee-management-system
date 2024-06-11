@@ -110,7 +110,7 @@
 <body>
     <div class="container">
         <h1>Add New Employee</h1>
-        <form method="POST" action="{% url 'newemployee' %}">
+        <form method="POST" action="{% url 'addemployee' %}">
             {% csrf_token %}
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
