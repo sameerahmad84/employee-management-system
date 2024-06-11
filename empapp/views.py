@@ -46,7 +46,7 @@ def editemployee(request, empcode):
         else:
             return HttpResponse("NOT SUCCESSFUL")
     
-    return render(request, "empapp/edit.html", {"emp": employee})
+    return render(request, "empapp/edit.html", {"emp": emp})
 
 def delemployee(request,empcode):
     user=get_object_or_404(employee,empcode=empcode)
